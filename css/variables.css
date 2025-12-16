@@ -1,0 +1,13 @@
+body {
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}

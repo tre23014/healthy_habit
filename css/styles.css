@@ -1,0 +1,36 @@
+header,
+footer {
+    background-color: #114b5f;
+    color: white;
+    padding: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+button {
+    background-color: #fe9920;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:focus,
+input:focus {
+    outline: 3px solid #fe9920;
+}
+
+button {
+    margin-left: 0.5rem;
+    background: #fe9920;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:focus {
+    outline: 3px solid #114b5f;
+}
