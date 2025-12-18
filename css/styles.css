@@ -1,20 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+}
+
 header,
 footer {
     background-color: #114b5f;
     color: white;
     padding: 1rem;
+    text-align: center;
 }
 
 main {
     max-width: 600px;
-    margin: auto;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 button {
     background-color: #fe9920;
+    color: #114b5f;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
+    margin: 0.25rem 0;
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 button:focus,
@@ -22,15 +41,76 @@ input:focus {
     outline: 3px solid #fe9920;
 }
 
-button {
-    margin-left: 0.5rem;
-    background: #fe9920;
-    border: none;
-    padding: 0.25rem 0.5rem;
-    cursor: pointer;
+.new-habit {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 2rem auto;
+    /* centers horizontally */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-habit h2 {
+    color: #114b5f;
+    margin-bottom: 1rem;
+}
+
+.new-habit input,
+.new-habit button {
+    width: 100%;
+}
+
+.habit-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.habit-list li {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-list li .habit-name {
+    font-weight: bold;
+    color: #114b5f;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button:focus {
-    outline: 3px solid #114b5f;
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
+
+button:focus,
+input:focus {
+    outline: 3px solid #fe9920;
+    outline-offset: 2px;
+}
+
+.habit-name {
+    cursor: pointer;
+    text-decoration: underline;
 }

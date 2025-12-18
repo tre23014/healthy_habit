@@ -1,10 +1,15 @@
 function addHabit(name) {
+    if (!name || !name.trim()) {
+        return;
+    }
+
     const habits = loadHabits();
     habits.push({
         id: Date.now(),
         name,
         completed: false,
-        streak: 0
+        streak: 0,
+        createdAt: new Date().toISOString()
     });
     saveHabits(habits);
 }
